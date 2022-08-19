@@ -7,6 +7,7 @@ const tooltipList = [...tooltipTriggerList].map(
 $('svg').click(() => {
   console.log(1)
   $('body').toggleClass('body-js').css('transition', '0.5s ease-in-out')
-  $('h2, p, .bold').toggleClass('text-js')
-  $('svg').toggleClass('night-mode-js').css('transition', '0.1s ease-in-out')
+  $('h2, p, .bold, .table').toggleClass('text-js')
+  $('svg').toggleClass('night-mode-js').css('transition', '0.5s ease-in-out')
+  $('.table').toggleClass('table-dark')
 })
